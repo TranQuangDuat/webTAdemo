@@ -1,0 +1,55 @@
+var biens = [1,2,3,4,5];
+
+var multiSelect = document.createElement('div');
+multiSelect.id = 'containBoxes';
+document.body.appendChild(multiSelect);
+
+var leftSideBox =document.createElement('select')
+leftSideBox.setAttribute('multiple', 'multiple');
+multiSelect.appendChild(leftSideBox);
+leftSideBox.classList.add('box');
+
+
+biens.forEach(bien =>{
+	let list = document.createElement('option');
+	list.innerHTML = bien;
+	leftSideBox.appendChild(list);
+})
+
+var arrows = document.createElement('div');
+arrows.id = 'arrows';
+multiSelect.appendChild(arrows);
+
+var leftArrow = document.createElement('div');
+leftArrow.classList.add('arrows');
+leftArrow.innerHTML = '<';
+arrows.appendChild(leftArrow);
+
+var rightArrow = document.createElement('div');
+rightArrow.classList.add('arrows');
+rightArrow.innerHTML = '>';
+arrows.appendChild(rightArrow);
+
+var rightSideBox = document.createElement('select');
+rightSideBox.setAttribute('multiple', 'multiple');
+multiSelect.appendChild(rightSideBox);
+rightSideBox.classList.add('box');
+
+rightArrow.onclick = function(){
+	leftSideBox.querySelectorAll('option').forEach(list =>
+	{
+		if (list.selected) {
+			leftSideBox.removeChild(list);
+			rightSideBox.appendChild(list);
+			
+		}
+	})
+};
+leftArrow.onclick = function(){
+	rightSideBox.querySelectorAll('option').forEach(list =>{
+		if (list.selected) {
+			rightSideBox.removeChild(list);
+			leftSideBox.appendChild(list);
+		}
+	})
+};

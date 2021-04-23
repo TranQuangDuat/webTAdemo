@@ -1,0 +1,22 @@
+-grid-template-columns: chia thanh cot.
+	+So gia tri trong thuoc tinh se tuong ung voi so cot, cac gia tri se tuong ung voi chieu rong cua cac cot lan luot tu trai qua phari
+
+-grid-template-rows: chia thanh hang.
+	+so gia tri trong thuoc tinh se tuong ung voi so hang , cac gia tri se tuong ung voi chieu cao cua cac hang tu tren xuong duoi
+
+-grid gaps: khoang cach giua cac cot,hang voi nhau
+	+grid-column-gap: khoang cach cot.
+	+grid-row-gap: khoang cach hang.
+
+-grid-lines:
+	+ grid-column-start: 2;
+    	+ grid-column-end: 4;
+
+-fr:
+	+la viet tat cua fraction(phanso), la don vi kick thuoc moi duoc thiet ke danh rieng cho gird. 1fr tuong ung voi 1 phan trong khong gian trong cua grid container.
+
+-grid repeat():
+	+neu grid co nhieu hang nhieu cot chieu dai giong nhau, dung symbol : repeat()
+de khai bao nhanh hon
+
++Linear Gradients (goes down/up/left/right/diagonally)

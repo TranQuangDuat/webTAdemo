@@ -1,0 +1,16 @@
+Jquery la 1 thu vien js:
++trong jquery:
++selector jquery: $(selector) => jquery object => la 1 object dc jquery viet san de thao tac.
++
+
+Tao jqeury obj: 
+	+slideUp(speed, callback): truot len.
+	+slideDown(speed, callback): truot xuong.
+	+fadeIn(speed, callback);
+	+fadeOut(speed, callback);
+	+remove(); <=> hide();
+	+show();
+	+animate(object option ): chuyen tu trang thai nay sang trang thai khac.
+	+toggle: chuyen doi trang thai.
+
++jquery event:

@@ -1,0 +1,8 @@
++Cai dat VueJs: install -g @vue/cli
+
++create: -V version
+-h : help
+
++create: vue create [namefile]
++cd hocvuejs
++npm run serve

@@ -1,0 +1,25 @@
+Cac thao tac cua npm:
+-init 1 project: tao 1 du an.
+-cai dat 1 goi npm install.
+-npm remove tengoi.
+npm install 
+
++cac file va thu muc
+	+package.json: cau hinh cua du an.
+	+dependencies: goi cua du an da cai
+	+dev-dependencies: goi cua du an da cai, danh cho viec phat trien
++nod_modules: chua cac file cua cac thu vien.
+
++scripts:
+	+lenh viet san.
+	+npm run [ten script].
+
++package-lock.json: file khoa phien ban.
+
++cai dat global: toan bo may tinh
+-2 loai package:
+	+Goi thu vien
+	+cli: <script
+
+
+

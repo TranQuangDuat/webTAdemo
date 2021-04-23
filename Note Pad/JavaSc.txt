@@ -1,0 +1,110 @@
+Object  
++ Object.asign() : duoc su dung de sao chep cac thuoc tinh co the dem dc va so huu tu 1 doi tuong nguon sang doi tuong dich.
+
++Object.create: tao 1 doi tuong su dung ham nguyen mau roi tao object moi
+
++Object.defineProperty() : su dung de khai bao hay xac dinh thuoc tinh cua object.
+
++Object.defineProperties() : su dung de tao moi hay khai bao nhieu thuoc tinh cua object.
+
++Object.entries() : tra ve 1 mang voi cac mang cua ten thuoc tinh, gia tri.( tra ve mot mang voi cac cap thuoc tinh [key,value],theo thu tu nhu for...in )
+
++Object.freeze() : ngan chan cac thuoc tinh hien co bi loai bo.
+
++Object.getOwnPropertyName() : tra ve 1 mang cua tat ca cac thuoc tinh( liet ke or k) duoc tim thay.
+
++Object.getPrototypeOf : tra ve nguyen mau cua doi tuong da chi dinh.
+
++Object.is : xac dinh xem hai gia tri co cung gia tri hay khong.
+
++Object.isExtensible() : xac dinh neu 1 doi tuong co the mo rong.
+
++Object.isFrozen() : phuong phap nay xac dinh neu doi tuong bi dong bang.
+
++Object.keys() : tra ve 1 mang cac ten thuoc tinh keys co the dem duoc cua 1 doi tuong cu the, theo thu tu nhu vong lap thong thuong.
+
++Object.values() :  tra ve 1 mang cac gia tri thuoc tinh (value )co the dem duoc cua chinh 1 doi tuong nhat dinh, theo cung thu tu duoc cung cap by 1 vong lap(for.. in).
+(doi voi tra ve mang laf so dung for in, con voi value dang string dufng for of).
+
+
+
+==================================================
+array
+
+value.push( gia tri canthem): ham them gia tri.
+
+array.length : tra ve so phan tu trong mang do , la 1 so nguyen 32 bit khong dau va luon lon hon chi chi muc lon nhat cua mang(muc lon nhat cua mang chinh la do dai cua mang -1)
+
++ concat(): tra ve 1 doi tuong mang chua 2 hoac nhieu mang duoc hop nhat.(phuong thuc dung de ket noi 2 hay nhieu mang lai voi nhau, khong lam thay doi cac mang da co ma se tra ve 1 mang moi).
+
+
++copywithin(): sao chep 1 phan tu cua mang da cho bang cac phan tu cua chinh no va tra ve mang da sua doi(sao chep 1 mang roi tra ve 1 mang moi).
+
++ every(): xac dinh tat ca cac phan tu cua 1 mang co thoa man cac dieu kien ham duoc cung cap hay ko.
+(kiem tra xem tat ca cac phan tu trong mang co vuot qua duoc kiem tra thuc hien by ham dc cung cap hay ko. No tra
+ve gia tri boolean).
+(cu phap callback :
+arr.every(callback(element[, index[, array]])[, thisArg])
+callback: kiem tra cho tung phan tu dc xu ly trong mang,lay ba doi so.
+
+-element: phan tu hien tai dang duoc xu ly trong mang.
+index(optional): chi muc cua phan tu hien tai dang dc xu ly trong mang.
+-array: cac mang duoc goi theo.
+thisArg : 1 gia tri dc su dung khi thuc hien callback.)
+
+
+
+
++fill(): djen cac phan tu vao 1 mang voi cac gia tri tinh.
+
++filter(): tra ve mang moi chua cac dieu kien ham duoc cung cap (true/false).
+(tao ra 1 mang moi voi cac phan tu dc loc qua kiem tra by ham dc cung cap).
+
++find():tra ve gia ti dau tien cua mang va dua mang do va thoa man cac dieu kien.
+(tra ve gia tri cua phan tu dau tien trong mang thoa man ham kiem tra duoc cung cap. neu khong, khong xac dinh duoc tra lai).
+
++findIndex(): tra ve gia tri chi muc cua phan tu dau tien trong mang thoai man dieu kien chi dinh.
+(tra ve vi tri(chi muc) cua phan tu dau tien trong mang thoa man ham kiem tra dc cung cap. nguoc la no se tra ve -1 neu khong co ham nao thoa man dieu kien).
+
++ham duoc cung cap c1 lan cho moi phan tu cua 1 mang.
+
++includes(): kiem tra mang da chho co chua phan tu da chi dinh hay k.
+(xac dinh xem 1 mang co bao gom 1 gia tri nhat dinh trong cua muc nhap cua no hay khong. tra ve true false.) arr.includes(valueToFInd[, fromIndex]);
+-valueToFind: Gia tri muon kiem tra.
+-fromIndex(tuy chon): vi tri trong mang de bat dau tim kiem valueToFind bat dau tim kiem tai fromIndex khi fromIndex amng gia tri duong or tai array.length + fromIndex khi fromIndex mang gia tri am). Gia tri mac dinh la 0.).
+
++join(): ket hop cac phan tu cua 1 mang duoi dang 1 chuoi.
+(join tao va tra ve 1 chuoi moi bang cach noi tat ca cac phan tu trong 1 mang (or 1 object ), dc phan tach bang dau phay or chuoi phan tach dc chi dinh. Neu mang chi co 1 muc thi muc do se dc tra ve ma khong can dau phan cach).
+
++indexOf(): tim kiem phan tu dc chi dinh trong mang va tra ve gia tri mang day tien.
+(tra ve chi muc dau tien ma tai do 1 phan tu da cho co the tim thay trong mang or -1 neu khong co.)
+
++lastIndexOf() : tim kiem phan tu trong mang va tra ve gia tri cuoi cung cua mang.
+
++map(): goi ham duoc chi dinh trong mang va tra ve mang moi.
+
++pop(): xoa di phan tu cuoi cung cua mang va tra ve phan tu nay.phuong thuc nay thay doi chieu dai cua mang.
+
++push(): them 1 or nhieu phan tu vao cuoi cua mang .
+
++shift(): loai bo va tra ve phan tu dau tien cua mang.
+(xoa bo phan tu dau tien cua mang. goi array thi se hien thi mang bi xoa, goi ham callback ddc gan tra ve phan tu bi xoa).
+
++unshift() : them 1 or nhieu phan tu vao dau mang.(sau do tra ve 1 mang moi).
+
++reserve() : dao nguoc cac yeu to chinh cua mang.
+(dao nguoc thu tu mang do).
+
++slice(): tra ve 1 mang moi chua ban sao cua 1 phan mang da cho.
+
++sort(): tra ve phan tu cua mang da dc sap xep.
+
++splice() : them/ xoa cac phan tu/ mang da cho.
+
+
+
++some(): kiem tra it nhat 1 phan tu trong mang co vuot qua duoc kiem tra hay khong. neu co no tra ve true neu khong no tra ve false.
+
++forEach(): thuc hien lap cac phan tu trong mang 1 lan  trong mang, co the thay the for de duyet mang.
+
+cod		

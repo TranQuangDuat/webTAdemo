@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="jquery-3.6.0.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+<div class="box-content">
+	<div id="menu-content">
+		<div class="menu-bar">
+			<ul class="menu-list" id="one">
+				<li><a href="index.html">mini-Toeic</a></li>
+				<li><a href="reading.html">Reading</a></li>
+				<li><a href="listen.html">Listening</a></li>
+			</ul>
+		</div>
+		<div class="menu-bar">
+			<ul class="menu-list" id="two">
+				<li>
+					<a id="btn-intro" href="#">Instruction</a>
+				</li>
+				<li>
+					<a id="btn-modal" href="#">Exit</a>
+					<div id="modal" class="hidden">
+						<div class="modal-box" id="box">
+							<div class="modal-menu">
+								<h2>Are you sure want to exit?</h2>
+								<button class="btn-X">X</button>
+							</div>
+							<hr>
+							<div class="modal-content">
+								<ul class="nav-item">
+									<li class="item1"><a href="#">Exit</a></li>
+									<li class="item2"><a href="#">Retake the test</a></li>
+									<li class="item3"><a class="btn-X" href="#">Cancel</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--Content Reading-->
+	<div id="splitercolumns">
+		<div class="split-rows">
+			<div class="split-left">
+					<h3>Being Left-handed in a Right-handed World</h3>
+					<img class="img" src="http://images.mini-ielts.com/images/2017/6/lh.jpeg" alt="img">
+					<p>
+						A. The probability that two right-handed people would have a left-handed child is only about 9.5 percent.
+						The chance rises to 19.5 percent if one parent is a lefty and 26 percent if both parents are left-handed.
+						The preference, however, could also stem from an infant’s imitation of his parents.
+						To test genetic influence, starting in the 1970s British biologist Marian Annett of the University of
+						Leicester hypothesized that no single gene determines handedness. Rather, during fetal development, a 
+						certain molecular factor helps to strengthen the brain’s left hemisphere, which increases the probability
+						that the right hand will be dominant, because the left side of the brain controls the right side of the body,
+						and vice versa. Among the minority of people who lack this factor, handedness develops entirely by chance.
+						Research conducted on twins complicates the theory, however. One in fivesets of identical twins involves
+						one right-handed and one left-handed person, despite the fact that their genetic material is the same.
+						Genes, therefore, are not solely responsible for handedness.
+					</p>
+				<br>
+					<p>
+						B.Genetic theory is also undermined by results from Peter Hepper and his team at Queen’s University in Belfast,
+						Ireland. In 2004 the psychologists used ultrasound to show that by the 15th week of pregnancy, fetuses already
+						have a preference as to which thumb they suck. In most cases, the preference continued after birth.
+						At 15 weeks, though, the brain does not yet have control over the body’s limbs. Hepper speculates that fetuses
+						tend to prefer whichever side of the body is developing quicker and that their movements, in turn, influence 
+						the brain’s development. Whether this early preference is temporary or holds up throughout development and
+						infancy is unknown. Genetic predetermination is also contradicted by the widespread observation that children
+						do not settle on either their right or left hand until they are two or three years old.
+					</p>
+				<br>
+					<p>
+						C.But even if these correlations were true, they did not explain what actually causes left-handedness.
+						Furthermore, specialization on either side of the body is common among animals. 
+						Cats will favor one paw over another when fishing toys out from under the couch.
+						Horses stomp more frequently with one hoof than the other. Certain crabs motion predominantly with
+						the left or right claw. In evolutionary terms, focusing power and dexterity in one limb is more efficient
+						than having to train two, four or even eight limbs equally. Yet for most animals, the preference for one 
+						side or the other is seemingly random. The overwhelming dominance of the right hand is associated only with humans.
+						That fact directs attention toward the brain’s two hemispheres and perhaps toward language.
+					</p>
+				<br>
+					<p>
+						D.Interest in hemispheres dates back to at least 1836. That year, at a medical conference, French physician
+						Marc Dax reported on an unusual commonality among his patients. During his many years as a country doctor,
+						Dax had encountered more than 40 men and women for whom speech was difficult, the result of some kind of brain damage.
+						What was unique was that every individual suffered damage to the left side of the brain. At the conference,
+						Dax elaborated on his theory, stating that each half of the brain was responsible for certain functions and
+						that the left hemisphere controlled speech. Other experts showed little interest in the Frenchman’s ideas.
+						Over time, however, scientists found more and more evidence of peopleexperiencing speech difficulties following
+						injury to the left brain. Patients with damage to the right hemisphere most often displayed disruptions in perception
+						or concentration. Major advancements in understanding the brain’s asymmetry were made in the 1960s as a result of so-called
+						split-brain surgery, developed to help patients with epilepsy. During this operation, doctors severed the corpus callosum—the
+						nerve bundle that connects the two hemispheres. The surgical cut also stopped almost all normal communication between
+						the two hemispheres, which offered researchers the opportunity to investigate each side’s activity.
+					</p>
+				<br>
+					<p>
+						E.In 1949 neurosurgeon Juhn Wada devised the first test to provide access to the brain’s functional organization
+						of language. By injecting an anesthetic into the right or left carotid artery, Wada temporarily paralyzed one 
+						side of a healthy brain, enabling him to more closely study the other side’s capabilities. Based on this approach,
+						Brenda Milner and the late Theodore Rasmussen of the Montreal Neurological Institute published a major study in 1975
+						that confirmed the theory that country doctor Dax had formulated nearly 140 years earlier: in 96 percent of
+						right-handed people, language is processed much more intensely in the left hemisphere. The correlation is not as
+						clear in lefties, however. For two thirds of them, the left hemisphere is still the most active language processor.
+						But for the remaining third, either the right side is dominant or both sides work equally, controlling different 
+						language functions. That last statistic has slowed acceptance of the notion that the predominance of right-handedness
+						is driven by left-hemisphere dominance in language processing. It is not at all clear why language control should 
+						somehow have dragged the control of body movement with it. Some experts think one reason the left hemisphere reigns over
+						language is because the organs of speech processing—the larynx and tongue—are positioned on the body’s symmetry axis. 
+						Because these structures were centered, it may have been unclear, in evolutionary terms, which side of the brain should
+						control them, and it seems unlikely that shared operation would result in smooth motor activity. Language and handedness
+						could have developed preferentially for very different  reasons  as  well.  For  example,  some  researchers,  
+						including evolutionary psychologist Michael C. Corballis of the University of Auckland in New Zealand, think that the
+						origin of human speech lies in gestures. Gestures predated words and helped language emerge. If the left hemisphere began
+						to dominate speech, it would have dominated gestures, too, and because the left brain controls the right side of the body,
+						the right hand developed more strongly.
+					</p>
+				<br>
+					<p>
+						F.Perhaps we will know more soon. In the meantime, we can revel in what, if any, differences handedness brings to our
+						human talents. Popular wisdom says right-handed, left-brained people excel at logical, analytical thinking. 
+						Lefthanded, right-brained individuals are thought to possess more creative skills and may be better at combining the
+						functional features emergent in both sides of the brain. Yet some neuroscientists see such claims as pure speculation.
+						Fewer scientists are  ready to claim that left-handedness means greater creative potential. Yet lefties are prevalent
+						among artists, composers and the generally acknowledged great political thinkers. Possibly if these individuals are among
+						the lefties whose language abilities are evenly distributed between hemispheres, the intense interplay required could lead
+						to unusual mental capabilities.
+					</p>
+				<br>
+					<p>
+						G.Or perhaps some lefties become highly creative simply because they must be more clever to get by in our 
+						right-handed world. This battle, which begins during the very early stages of childhood, may lay the groundwork
+						for exceptional achievements.
+					</p>
+			</div>
+			<div class="spliter"></div>    
+			<div class="split-right">
+				<h3>Question 1-5</h3>
+				<p>Reading Passage has seven sections A-D</p>
+				<p>Which section contains the following information?</p>
+				<p>Write the correct letter A-D in boxes 1-5 on your answer sheet.</p>
+				<div>
+					<p>1
+						<select id="q1">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						Preference of using one side of the body in animal species.
+					</p>
+					<p>2
+						<select id="q2">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						How likely one-handedness is born.
+					</p>
+					<p>3
+						<select id="q3">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						The age when the preference of using one hand is settled.
+					</p>
+					<p>4
+						<select id="q4">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						Occupations usually found in left-handed population.
+					</p>
+					<p>5
+						<select id="q5">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						A reference to an early discovery of each hemisphere’s function.
+					</p>
+					<hr>
+
+					<h3>Question 6-7</h3>
+					<p>Look at the following researchers (Questions 6-7) and the list of findings below.</p>
+					<p>Match each researcher with the correct finding.</p>
+					<p>Write the correct letter A-D in boxes 6-7 on your answer sheet.</p>
+
+					<div id="noidung">
+						<h4>List of Findings</h4>
+						<p> A  Early language evolution is correlated to body movement and thus affecting the preference of use of one hand.</p>
+						<p> B No single biological component determines the handedness of a child.</p>
+						<p> C Each hemisphere of the brain is in charge of different body functions.</p>
+						<p> D Language process is mainly centered in the left-hemisphere of the brain.</p>
+					</div>
+					<p>6
+						<select id="q6">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						Marian Annett
+					</p>
+					<p>7
+						<select id="q7">
+							<option value="null"></option>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+						</select>
+						Peter Hepper
+					</p>
+					<hr>
+					<h3>Question 8-10</h3>
+					<p>Do the following statements agree with the information given in Reading Passage?
+						In boxes <span>10-13</span> on your answer sheet write</p>
+					<p> YES if the sataement agrees with the information</p>
+					<p> NO if the statement contradicts the information</p>
+					<p> NOT GIVEN if there is no information on this</p>
+
+					<p>8
+						<select id="q8">
+							<option value="null"></option>
+							<option value="A">YES</option>
+							<option value="B">NO</option>
+							<option value="C">NOT GIVEN</option>
+						</select>
+						The study of twins shows that genetic determinationis not the only factor for left-handedness.
+					</p>
+					<p>9
+						<select id="q9">
+							<option value="null"></option>
+							<option value="A">YES</option>
+							<option value="B">NO</option>
+							<option value="C">NOT GIVEN</option>
+						</select>
+						Marc Dax’s report was widely accepted in his time.
+					</p>
+					<p>10
+						<select id="q10">
+							<option value="null"></option>
+							<option value="A">YES</option>
+							<option value="B">NO</option>
+							<option value="C">NOT GIVEN</option>
+						</select>
+						Juhn Wada based his findings on his research of people with language problems.
+					</p>
+				</div>
+				<hr>
+				<h4>---End of the Test---</h4>
+				<h4>Please Submit to view your score, solution and explanations.</h4>
+				<button class="submit btn-sub" type="submit">Submit</button>
+			</div>
+		</div>
+	</div>
+<!--Check question-->
+	<div id="box-check">
+		<div id="controller-upper">
+			<div>Question :</div>
+			<ul aria-label="question" class="question-btn" role="navigation">
+				<li id="navq1" >
+					<a arial-label="Question 1">01</a>
+				</li>
+				<li id="navq2">
+					<a arial-label="Question 2">02</a>
+				</li>
+				<li id="navq3">
+					<a arial-label="Question 3">03</a>
+				</li>
+				<li id="navq4">
+					<a arial-label="Question 4">04</a>
+				</li>
+				<li id="navq5">
+					<a arial-label="Question 5">05</a>
+				</li>
+				<li id="navq6" >
+					<a arial-label="Question 1">06</a>
+				</li>
+				<li id="navq7">
+					<a arial-label="Question 2">07</a>
+				</li>
+				<li id="navq8">
+					<a arial-label="Question 8">08</a>
+				</li>
+				<li id="navq9">
+					<a arial-label="Question 9">09</a>
+				</li>
+				<li id="navq10">
+					<a arial-label="Question 10">10</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="show">
+			<ul id="view1">
+				<li class="answered">answered</li>
+				<li class="unanswered">unanswered</li>
+			</ul>
+
+			<ul id="view2"> 
+				<li>
+					<a class="btn submit" href="#">Submit</a>
+				</li>
+				<li><a class="btn solution" href="viewsolution.html">Solution</a></li>
+				<!-- dem gio-->
+			<div id="stopwatch">
+				00:00:00
+			</div>
+	
+			<ul id="buttons">
+				<li><button onclick="startTimer()">Start</button></li>
+				<li><button onclick="stopTimer()">Stop</button></li>
+	
+				<li><button onclick="resetTimer()">Reset</button></li>
+			</ul>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="takecontent.js"></script>
+<script src="stopwatch.js"></script>
+</html>

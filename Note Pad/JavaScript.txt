@@ -1,0 +1,352 @@
+12 x 2
+=====================
+JavaScript:
++ 2 moi truong : trinh duyet, nodejs tren server
++js engine: bo thuc thi js.
++oop:huong doi tuong.
+
++Bien variable:
+-la 1 vung bo nho tren may tinh
+-dat ten:
+-co gia tri.
+	--var [ten bien] = [gia tri];
+	--let [ten bien] = [gia tri];
+var toan cau, let trong pham vi.
+-cac kieu cua bien: variable type
+++ Goi ham: su dung dau cham
++ ham la 1 doan code viet san
+  ++ String:(chuoi) - la 1 loat cac chu cai.
+  ++ Number : so chan, so thap phan
+  +Object: doi tuong.
+  ++array: mang.
+  ++undefined: 1 bien chua dc dinh nghia(chua khai bao)
+  ++ null: khai bao ma chua muon dat gia tri.
+  ++ NaN: not a number. => cong tru nhan chia vs 1 chuoi ...
+  ++boolean: chi chua gia tri true/false.
+-cac kieu cua bien:
+++String:
+    --chuoi:
+	-Cac thao tac vs chuoi:
+	---tach chuoi: split([seperator], [limit]).
+        ---noi chuoi: + or .concat().  
+	---toUpperCase(): Chuyen thanh in hoa.
+	---toLowerCase(): Chuyen thanh in thuong.
+	---substring(start, length): cat chuoi.
+	---substr(start, length):cat chuoi.
+	---slice():cat chuoi ,cat mang,  chi anh huong toi mang.
+	---indexOf([chuoi check]): tra ve vi tri cua chuoi con trong chuoi goc.vi tri dau tien.
+	---lastIndexOf([chuoi check]): tra ve vi tri cuoi cung cua chuoi con trong chuoi goc.
+	---startsWith() => bat dau voi(tra ve gia tri dau tien trong chuoi)
+		+ tra ve: true/false.
+	---endsWith():=> tra ve gia tri cuoi trong chuoi
+		+ tra ve: true/false.
+	---trim(): cat di khoang trong(white space).
+	---replace(): thaythe 1 chuoi.
+	---replaceAll([chuoi bi thay the],[chuoi thay the]): thay the het 1 chuoi.
+	---includes('chuoi'): kiem tra chuoi con co trong chuoi goc hay ko.
+		+tra ve : true/false.
+
++Kiem tra kieu cua bien: typeof().
+
+
+++Number :
+	---So: so nguyen, thap phan, so thuc.
+	---Math: object
+		+Lam tron so:
+		+floor(): ham lam tron xuong
+		+ceil(): lam tron len.
+		+round(): lam tron len xuong.
+	--- + - * /: toan tu.
+	---Chia lay du: %.
+	---khai can Math.sqrt():
+	---Math.pow(): mu ^.
+	---Math.abs(): gia tri tuyet doi.
+
+++Array: mang.
+	---mang la 1 bien: 1 bien chua dc nhieu gia tri.
+	---truy cap phan tu cua mang:
+		+ten mang[index];
+	---xoa 1 phan tu cua mang:delete().
+	---them 1 phan tu: push(): Them vao cuoi mang.
+	---shift(): xoa phan tu dau trong mang.
+	---unshift(): them phan tu vao dau mang.
+	---pop(): xoa phan tu o cuoi mang. 
+
+	---lay tong so phan tu (do dai phan tu).length.
+	---join(): chuyen thanh string.ham noi.
+	---reverse(): ham dao nguoc.
+	---sort():sap xep.
+	---slice():tham trij k lam thay doi mang.sao chesp lai mang
+	---splice(start, [count] ):co anh huong den orginal array.
+	tham chieu cat mang.
+
+(++Object:
+	---Doi tuong: code mo ta 1 vat the, trong thuc te, con nguoi, xe co.....
+	---Doi tuong gom:
+	++property: thuoc tinh.
+	++truy cap thuoc tinh: dau cham .
+	++method: phuong thuc(ham)
+		+hanh dong cua doi tuong.
+)
+---forEach():lap qua tung phan tu cua array => chay ham , khong co break, continue.
+		+Tham so : ham
+	---map(): lap qua tung phan tu cua mang va tra ve 1 mang moi.
+		+chay qua ham va return.	
+	---filter(): loc tung phan tu
+		+loc dua theo return cua ham.
+		+neu ham tra ve true => pass.
+		+neu tra ve false => loai.
+
+	---reduce(ham, gia tri ban dau): tong cac phan tu 
+		+Ham don.
+		+gia tri cua lan lap truoc la value cua lan lap sau
+	---every(): kiem tra dieu kien 
+		+chi can 1 dieu kien sai tra ve false. con pass thi true
+	---some(): nguoc lai vs every().kiem tra gia tri chi can 1 gia tri trong mang pass thi vong lap pass.
+	
+
+++Ham lap special.
+tham so co the la ham
+ham co the luu vao bien
+tat ca moi thu co the la bien.
+
+++function().
+	---la 1 khoi lenh duoc dong goi =lai khong lq den ben ngoai thuc hien 1 cong viec nao do.
+	---ten function(): dat la cac dong tu.
+	---Khi duoc viest ra ham k tu dong chay phai goi ham.
+	---co the goi duoc nhieu lan. 
+	---tham so:bien duoc dua vao ham, bien dau vao.
+	---Khi goi ham phai truyen cac bien dau vao(tham so).
+	---nhieu tham so:
+	---return:
+		+bien dau ra.
+		+khi ctr chay thay return thi doan code phia duoi k chay.
++ham khong ten (anonymous function).
+
+++Ham tu chay: self invoking function.
+
+arrow function(es6) ban moi.
+	++ (tham so ) => {}.
+		- neu chi 1 tham so k can dau ().
+----this => khac nhau(trong arrow func). 
+
+neu noi dung ham chi co 1 dong lenh => khong can dau {}.
+	+Khong can return.
+
+---spread operator:
+/*
+	var persons = [
+	['huy', 21, 8],
+	['khoi linh', 21 , 9],
+	['ngo ta', 21, 10]
+];
+
+function showInfo(name, age, mark){
+	console.log('Ten la: '+name+' tuoi '+age+' mark '+mark);
+}
+persons.forEach(student => showInfo(...student));
+
+*/
+
+js comparison:so sanh
+!==: so sanh ca kieu va gia tri
+
+++Copy bien trong js:
+-Assign by value:
+	---gan gia tri va khong bi thay doi value
+	--Khi bien dc gan thay doi bien ban dau khong bi thay doi
+-Assign by reference:
+	---gan bang reference. va co the bi thay doi value.
+		=> number ,string,boolean.
+	---khi bien moi bi thay doi => bien ban dau cx bi thay doi theo.
+	=>array, object.
+
+--Dectructuring:
+	+Cau truc: {danh sach cac property} = obj ban dau.
+	--object,array => detruct
+---chi co the detructuring tu 1 obj va 1 array => vaf cx chi co the detruct 1 obj trong 1 array va array trong 1 array.
+
+gop 2 objectvd:
+var person = {
+	name: 'huy',
+	age: 21
+};
+var personNal = {
+	add: 'Ha Noi',
+	gender: 'Male'
+};
+person = {...person, ...personNal};
+
+console.log(person);
+
+
+----------
+class(huong doi tuong).
+--Prototype trong js: 
++OOP:la 1 cach viet code, trong do code cua chung ta se chia thanh cac doi tuong, va cac doi tuong tuong tac voi nhau.
+	-OOP la cach viet code, trong do chung ta xay dung cac vat the, thuc the
+++Doi tuong: co the la bat ki thu gi.
+--Object: doi tuong
+	-la the hien cua 1 class 
+	-thuc the: la 1 the hien thuc cua 1 class.
+	viec tao ra 1 obj tu class goi la khoi tao doi tuong
+--Class: lop.
+	-la 1 Ban mo ta cua doi tuong.
+	-constructor() la 1 ham chay dau tien khi khoi tao 1 doi tuong.
+	-co cac property va method.
+	--property :mau sac,chieu cao,can nag .. thuoc tinh cua doi tuong.		
+		+property cua class dc dinh nghia trong constructor.
+	--method(): function - ham.
+		-hanh dong cua doi tuong. 
+
+--this: cai nay.
+	-chinh la class hien tai - object hien tai.
+	-Trong js: ngu canh cua this 
+	--function: la cai nay, object hien tai.
+	--arrow function: this la object cha, chua object hien tai. 
+	-Extends: ke thua class:
+		-class co the ke thua tu 1 class khac. 
+	extends .
+	-construcotr: se ntn
+	-overide: ghi de:
+		neu class con ma co ham giong ham cha thi no ghi de.
+	-super:
+
+	-constructor k the goi lan 2 no la duy nhat cho du cac class thua ke co tao ra 1 constructor thi se bi loi. tru khi dung ham super() nos sex chay constructor cua ham cha va chay constructor cua ham cha dau tien.  
+
++Prototype js:
+	+ la 1 property cua object.
+	+Tat ca moi thu deu co prototype.
+	+La object ma object hien tai dang ke thua.
+	+No chua tat ca cac ham co san trong object hien tai.
+	+prototype cua array => chua sawn cac ham co san cua array.
+	+prototype cua string=> chua sawn cac ham co san cua string.
+	+prototype la 1 cach ma js giau cac thuoc tinh di.
+
+-Co the them ham vao trong prototype.
+
+--------------
+
+Js tren browser.
+
++ Js tren trinh duyet.
++ Doi tuong Window.
+	+La 1 object to nhat cua js tren trinh duyet.
+	+Tat ca code, cua chung ta deu nam trong doi tuong window, doi tuong window dai dien cho tab dang mo.
+	+Tat ca nhung gi chung ta viet trong Js deu nam trong doi tuong window.
+
++Cac thuoc tinh, ham thuong dung cua doi tuong Window.
+-console.log:
+	+log
+	+table
+	+error
+	+warn
++alert(): xuat ra 1 thong  bao tren man hinh.
++prompt(): input nhap len thong bao tren man hinh
++setInterval(function(), time): la ham dat thoi gian chay vo han.
+	+time la 1 miliseconds.
+	+clearInterval(intervalName): xóa 
++setTimeout(function(),time) => giong setInterval nhung no chi chay 1 lan
+	+time van la milisecond.
+	+clearTimeout(name):
+
++innerWidth:
++innerHeight:
+	=> kick thuoc cua trinh duyet.
++outerWidth:
++outerHeigth:
+	=> kick thuoc ngoai cua trinh duyet.
++history:
+	-back():
+	-go():
++navigator:
+	+geolocation: vi tri dia li
+	+bluetooth:
++document.
+	-la 1 thuoc tinh cua doi tuong window.
+	-dai dien cho trang HTML hientai.
+
++Cac ham cua doi tuong document:
+
+
+
+++DOM: document object model
+	+cac ham thuong dung cua DOM
+
+
+-createElement(): ham tao 1 html element.
+
+-getElementById(id cua the): lay thuoc tinh Id
+
+-getElementsByTagName(the name):Lay tat ca the ten.
+-getElementsByClassName()
+-querySelector(css selector):element dau tien dap ung duoc css selector.(chi lay 1 cai).
+
+Thao tac voi Class:
+	-classList: lấy các danh sách class.
+	-classList.add(): them class.
+	-classList.remove(): xoa class.
+	-classList.contains():
+-queryselectorAll(): => htmlColection.tra ve tat ca cac element match vs css selector.
+
+-firstChild : lay thuoc tinh dau tien cua html element.
+
++Sua style: du dung thuoc tinh style.
++innerHTML: sua noi dung.
+
+-appendChild():them vao cuoi.
++removeChild() => xoa phan tu.
++repalceChild('phan tu moi, phan tu cu) => thay the 
+
+
++JavaScript dom event: su kien.
++Su kien la hanh vi cua nguoi dung thao tac len dom object.
++xu ly cac su kien : click thi lam gi ?
++cac dom object khac nhau  => co nhung su kien khac nhau.
+
+-De bat su kien 
+	-addEventListener(ten_su_kien,function() {}).
+
+-on..
+
++Even . object:
+-khi 1 su kien duoc fire (xay ra) => dom object se goi callback voi 1 tham so la 1 event object.
++Trong even object:
+	+target: la dom object da fire event
+	+preventDefault() => huy bo hanh dong mac dinh
+	+keycode
+
+-Tat ca cac dom oject deu co 
+	+click: bam chuot xuong, chua di chuyen ra ngoai, tha chuot ra
+	+dbclick: double chuot 2 lan.
+	+mousedown: bam chuot xuong.
+	+mouseover: chuot tu ben ngoai => di chuot vao trong.
+	+mousemove: di chuot trong dom object.
+	+mouseout: di chuot ra ben ngoai.
+	+load: khi dom object da dc load xong.
+		+document.
+		+image. 
+		+audio.
+	+error: Khi bi loi.
+	+unload: Window
+
+	+change: thay doi
+		+input, radio, checkbox.
+	+submit:
+		+form:
+	+touchstart:
+	+touchend
+	
+-media:audio, video.
+	+onended: ket thuc.
+	+onplay: 
+
+	+getAttribute:
+	+getElementClassName:
+		+classList: lay cac ds class or tra ve 1 className(s) cua 1 element nhu la 1 DOM token
+		.
+		+classList.add(): them class.
+		+classList.remove():xoa class.
+		+classList.contains().
+		HTMLElementObject.className
+		HTMLElementObject.className = class

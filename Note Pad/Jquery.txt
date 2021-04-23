@@ -1,0 +1,48 @@
+Jquery la 1 thu vien js:
++trong jquery:
++selector jquery: $(selector) => jquery object => la 1 object dc jquery viet san de thao tac.
+
+
+Tao jquery obj: 
+vd: students = $('<div> huy</div>');
+appendTo = appendChild js.
+
++Cac ham thuong dung cua Jquery;
+
++slideUp(speed, callback): truot len.
++slideDown(speed, callback): 	truot xuong.
++fadeIn(speed, callback);
++fadeOut(speed, callback);
++remove(); <=> hide();
++show();
++animate(object (element, time): chuyen tu trang 	thai nay sang trang thai khac.
++toggle: chuyen doi trang thai.
++append: them vao cuoi
++prepend: them vao dau.
++appendTo()
++jquery event:
+.click:
+.dbclick:
+.mouseover
+.mouseout
+.change
+.mouseup
+.mousedown
+.load
+
+
++$(this) trong jquery.
+this chinh la jquery obj cua event.target.
+
++each(f()):
++navigate in dom document:
++parent(): goi nguoc len thanh phan cha.
++next(): 
++prev(): truoc.
++children(selector): lay tat ca cac thang con.
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+Stirng:
+
+length: tra ve do dai cua chuoi.
+prototype: cho phep them thuoc tinh hay phuong thuc.
+(object.prototype.name = value;
+
+String Method :
+
+charAt(): tra ve 1 ki tu cua chuoi o vi tri dc chi dinh ma khong sua doi chuoi goc.
+
+charCodeAt(): cung cap gia tri Unicode cua 1 ki tu trong chi muc dc chi dinh.
+
+search(): tim miem 1 bieu thuc chinh quy dinh trong 1 chuoi da cho va tra ve vi tri neu xay ra khop.
+
+match(): 
+
+replace(): thay the 1 chuoi.
+
+substr(): su dung de nap 1 phan tu cua chuoi da cho tren co so vi tri va do dai bat dau dc chi dinh.
+
+substring(); su dung de tim kiem 1 phan cua chuoi da cho tren co so da chi dinh.
+
+slice: trich xuat 1 phan cua chuoi va tra ve no duoi dang 1 chuoi moi ma khong sua doi chuoi goc.
+
+toLowerCasee(): bien doi chuoi thanh chu thuong.
+
+toLocaleLowerCase(): chuyen doi chuoi da cho thanh chu thuong tren co so ngon ngu hien tai cua may chu.
+
+toUperCase(): tra ve gia tri chuoi dc chuyen doi thanh chu hoa( gia tr se dc chuyen doi thanh chuoi neu khong phai la chuoi).
+
+toString(): cung cap 1 chuoi dai dien cho doi tuong cu the.
+valueOf(): cung cap gia tri nguyen thuy cua dtg chuoi.
+
+split(): bien 1 chuoi thanh 1 mang cac chuoi bang cach tach chuoi theo ki tu dc chi dinh.
